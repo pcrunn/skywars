@@ -1,10 +1,8 @@
 package wtf.retarders.skywars.netty;
 
-import io.netty.channel.ChannelHandler;
-import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelDuplexHandler;
 
-public interface INettyTaskHandler extends ChannelHandler {
+public abstract class INettyTaskHandler extends ChannelDuplexHandler {
 
-    void channelRead(ChannelHandlerContext ctx, Object msg);
 
 }

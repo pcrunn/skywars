@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bb6024c-30bd-4a46-bd08-23185bb3cc3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/SkywarsPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/SkywarsPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/chest/ChestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/chest/ChestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/chest/ChestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/chest/ChestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/netty/INettyTaskHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/netty/INettyTaskHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/netty/NettyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/netty/NettyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/netty/impl/NettyGameInformationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/netty/impl/NettyGameInformationHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
       <updated>1580607920715</updated>
       <workItem from="1580607924427" duration="4725000" />
       <workItem from="1580645130157" duration="3297000" />
-      <workItem from="1580657952946" duration="606000" />
+      <workItem from="1580657952946" duration="882000" />
     </task>
     <servers />
   </component>
@@ -86,6 +89,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="436" y="80" width="1038" height="842" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580607990880" />
+    <state x="1188" y="436" width="446" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580658853395">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1188" y="436" width="446" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1580658853395" />
     <state x="617" y="239" width="672" height="677" key="run.anything.popup" timestamp="1580609592749">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

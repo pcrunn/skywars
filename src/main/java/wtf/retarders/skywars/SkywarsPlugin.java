@@ -19,9 +19,9 @@ public class SkywarsPlugin extends JavaPlugin {
         Bukkit.getScheduler().runTaskTimerAsynchronously(this, new NettyThread(), 60L, 0L);
     }
 
-    public void onDisable() {}
+    public void onDisable() { }
+
     public static SkywarsPlugin getPlugin() {
         return SkywarsPlugin.getPlugin(SkywarsPlugin.class);
     }
-
 }

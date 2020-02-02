@@ -25,7 +25,7 @@ public class NettyThread implements Runnable {
     @SneakyThrows
     @Override
     public void run() {
-        if(!taskHandlers.isEmpty()) {
+        if (!taskHandlers.isEmpty()) {
             EventLoopGroup bossGroup = new NioEventLoopGroup();
             EventLoopGroup workerGroup = new NioEventLoopGroup();
 

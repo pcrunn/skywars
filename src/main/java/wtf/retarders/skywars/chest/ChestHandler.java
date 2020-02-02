@@ -14,7 +14,7 @@ public class ChestHandler implements IHandler {
     private List<BlockState> filledChests = new ArrayList<>();
 
     public void fillChest(BlockState block, ChestType chestType) {
-        if(!(block instanceof Chest)) {
+        if (!(block instanceof Chest)) {
             throw new IllegalArgumentException("block is not instance of a chest");
         }
 
