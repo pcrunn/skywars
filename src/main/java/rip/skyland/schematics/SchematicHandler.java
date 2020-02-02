@@ -1,9 +1,6 @@
 package rip.skyland.schematics;
 
-import lombok.Getter;
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.java.JavaPlugin;
-import rip.skyland.schematics.commands.SchematicCommand;
 import rip.skyland.schematics.region.RegionListeners;
 import wtf.retarders.skywars.SkywarsPlugin;
 import wtf.retarders.skywars.handler.IHandler;

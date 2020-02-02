@@ -5,11 +5,11 @@ import lombok.Setter;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import rip.skyland.schematics.SchematicLoader;
 import rip.skyland.schematics.SchematicLoaderAPI;
 import rip.skyland.schematics.schematic.ISchematic;
 import rip.skyland.schematics.schematic.block.SchematicBlock;
 import rip.skyland.schematics.util.JsonConfig;
+import wtf.retarders.skywars.SkywarsPlugin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class Schematic implements ISchematic {
     }
 
     public void build(Location startLocation) {
-        Bukkit.getScheduler().runTask(SchematicLoader.getInstance(), () -> schematicBlocks.forEach(schematicBlock -> {
+        Bukkit.getScheduler().runTask(SkywarsPlugin.getPlugin(), () -> schematicBlocks.forEach(schematicBlock -> {
             Location location = startLocation.add(schematicBlock.x, schematicBlock.y, schematicBlock.z);
 
             location.getBlock().setType(Material.valueOf(schematicBlock.blockMaterial));
