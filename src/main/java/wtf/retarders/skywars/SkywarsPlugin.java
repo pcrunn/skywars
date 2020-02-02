@@ -13,7 +13,7 @@ public class SkywarsPlugin extends JavaPlugin {
 
     public void onEnable() {
         this.handlerManager = new HandlerManager();
-        Bukkit.getScheduler().runTaskTimer(this, new NettyThread(), 60L, 0L);
+        Bukkit.getScheduler().runTaskTimerAsynchronously(this, new NettyThread(), 60L, 0L);
     }
 
     public void onDisable() {

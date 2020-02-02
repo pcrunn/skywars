@@ -9,18 +9,17 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.SneakyThrows;
-import org.bukkit.scheduler.BukkitRunnable;
-import wtf.retarders.skywars.netty.impl.GameInformationNettyHandler;
+import wtf.retarders.skywars.netty.impl.NettyGameInformationHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class NettyThread extends BukkitRunnable {
+public class NettyThread implements Runnable {
 
     private List<INettyTaskHandler> taskHandlers = new ArrayList<>();
 
     public NettyThread() {
-        this.taskHandlers.add(new GameInformationNettyHandler());
+        this.taskHandlers.add(new NettyGameInformationHandler());
     }
 
     @SneakyThrows
@@ -32,16 +31,14 @@ public class NettyThread extends BukkitRunnable {
 
             try {
                 ServerBootstrap bootstrap = new ServerBootstrap();
-                taskHandlers.forEach(handler -> {
-                    bootstrap.group(bossGroup, workerGroup)
-                            .channel(NioServerSocketChannel.class)
-                            .childHandler(new ChannelInitializer<SocketChannel>() {
-                                public void initChannel(SocketChannel ch) {
-                                    ch.pipeline().addLast(handler);
-                                }
-                            })
-                            .childOption(ChannelOption.SO_KEEPALIVE, true);
-                });
+                taskHandlers.forEach(handler -> bootstrap.group(bossGroup, workerGroup)
+                        .channel(NioServerSocketChannel.class)
+                        .childHandler(new ChannelInitializer<SocketChannel>() {
+                            public void initChannel(SocketChannel ch) {
+                                ch.pipeline().addLast(handler);
+                            }
+                        })
+                        .childOption(ChannelOption.SO_KEEPALIVE, true));
 
 
                 ChannelFuture f = bootstrap.bind(8080).sync();
