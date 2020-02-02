@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bb6024c-30bd-4a46-bd08-23185bb3cc3e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XEOjMD2GgLB6umTa40RnokEFpm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bb6024c-30bd-4a46-bd08-23185bb3cc3e" name="Default Changelist" comment="" />
+      <created>1580607920715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580607920715</updated>
+      <workItem from="1580607924427" duration="1461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="754" y="195" width="388" height="572" key="#com.intellij.ide.util.MemberChooser" timestamp="1580609110546">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="754" y="195" width="388" height="572" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580609110546" />
+    <state x="736" y="260" width="438" height="481" key="FileChooserDialogImpl" timestamp="1580608199977">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="736" y="260" width="438" height="481" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580608199977" />
+    <state x="436" y="80" width="1038" height="842" key="SettingsEditor" timestamp="1580607990880">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="436" y="80" width="1038" height="842" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580607990880" />
+  </component>
+</project>
