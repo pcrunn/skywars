@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8bb6024c-30bd-4a46-bd08-23185bb3cc3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/SkywarsPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/SkywarsPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/chest/ChestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wtf/retarders/skywars/chest/ChestHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580607920715</updated>
       <workItem from="1580607924427" duration="4725000" />
-      <workItem from="1580645130157" duration="1500000" />
+      <workItem from="1580645130157" duration="3297000" />
+      <workItem from="1580657952946" duration="606000" />
     </task>
     <servers />
   </component>
