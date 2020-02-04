@@ -3,6 +3,7 @@ package wtf.retarders.skywars.handler;
 import lombok.Getter;
 import rip.skyland.schematics.SchematicHandler;
 import wtf.retarders.skywars.map.MapHandler;
+import wtf.retarders.skywars.profile.ProfileHandler;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,10 +15,21 @@ public class HandlerManager {
     private List<IHandler> handlers = new ArrayList<>();
 
     public HandlerManager() {
-        this.handlers.addAll(Arrays.asList(
+        Arrays.asList(
                 new SchematicHandler(),
-                new MapHandler()
-        ));
+                new MapHandler(),
+                new ProfileHandler()
+        ).forEach(this::registerHandler);
+
+        this.handlers.forEach(IHandler::load);
+    }
+
+    public void registerHandler(IHandler handler) {
+        if(handlers.stream().anyMatch(targetHandler -> targetHandler.getClass().equals(handler.getClass()))) {
+            throw new IllegalArgumentException("handler with same class already registered");
+        }
+
+        this.handlers.add(handler);
     }
 
     @SuppressWarnings("unchecked")

@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface IMap extends ISchematic {
 
+    Location getLobbyLocation();
     List<Location> getSpawnPoints();
     boolean isTeamMap();
+
 }

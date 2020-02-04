@@ -14,13 +14,13 @@ public class DataHandler implements IHandler {
         this.maxPlayers = maxPlayers;
         this.teams = teams;
 
-        SkywarsPlugin.getPlugin().getHandlerManager().getHandlers().add(this);
+        SkywarsPlugin.getPlugin().getHandlerManager().registerHandler(this);
     }
 
     public DataHandler() {
         this.maxPlayers = 16;
         this.teams = false;
 
-        SkywarsPlugin.getPlugin().getHandlerManager().getHandlers().add(this);
+        SkywarsPlugin.getPlugin().getHandlerManager().registerHandler(this);
     }
 }

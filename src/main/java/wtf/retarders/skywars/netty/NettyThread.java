@@ -10,8 +10,10 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.SneakyThrows;
 import wtf.retarders.skywars.netty.impl.NettyGameInformationHandler;
+import wtf.retarders.skywars.netty.impl.PlayerJoinHandler;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class NettyThread implements Runnable {
@@ -19,7 +21,10 @@ public class NettyThread implements Runnable {
     private List<INettyTaskHandler> taskHandlers = new ArrayList<>();
 
     public NettyThread() {
-        this.taskHandlers.add(new NettyGameInformationHandler());
+        this.taskHandlers.addAll(Arrays.asList(
+                new NettyGameInformationHandler(),
+                new PlayerJoinHandler()
+        ));
     }
 
     @SneakyThrows
